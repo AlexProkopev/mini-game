@@ -30,25 +30,27 @@ const checkedKey = event => {
       break;
   }
   
-  if ((stepLeft >= 29 && stepLeft <= 31) && (stepDown >= 29 && stepDown <= 31)) {
-    alert("Вы проиграли");
-    location.reload()
-} else if ((stepLeft >= 44 && stepLeft <= 46) && stepDown === 50) {
-    alert("Вы проиграли");
-    location.reload()
-} else if ((stepLeft >= 14 && stepLeft <= 16) && (stepDown >= 23 && stepDown <= 25)) {
-    alert("Вы проиграли");
-    location.reload()
-} else if ((stepLeft >= 23 && stepLeft <= 25) && stepDown === 59) {
-    alert("Вы проиграли");
-    location.reload()
-} else if ((stepLeft >= 9 && stepLeft <= 11) && stepDown === 34) {
-    alert("Вы проиграли");
-    location.reload()
-} else if (stepLeft === 50 && stepDown === 50) {
+
+  if (stepLeft === 50 && stepDown === 50) {
     alert("Вы выиграли");
     location.reload()
-}
+  }  else if ((stepLeft >= 8.5 && stepLeft <= 11) && (stepDown >= 31 && stepDown <= 39)) {
+    alert("Вы проиграли");
+    location.reload()
+} else if ((stepLeft > 13.5 && stepLeft < 18.5) && stepDown > 20.5 && stepDown < 28.5) {
+    alert("Вы проиграли");
+    location.reload()
+} else if ((stepLeft >= 27.5 && stepLeft < 32.5) && (stepDown >= 25.5 && stepDown <= 35.5)) {
+    alert("Вы проиграли");
+    location.reload()
+}  else if ((stepLeft >= 43 && stepLeft <= 47) && (stepDown >= 46 && stepDown <= 54)) {
+    alert("Вы проиграли");
+    location.reload()
+} else if ((stepLeft >= 22 && stepLeft <= 26) && (stepDown >= 56 && stepDown <= 64)) {
+    alert("Вы проиграли");
+    location.reload()
+    
+} 
     
 
 };
